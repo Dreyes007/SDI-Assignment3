@@ -57,14 +57,26 @@ var slowMotion = function(number){
 	};
 	return seconds;
 };
-
+//String Property
+var a = "Crazy horse",
+	b = "covered his eyes";
+	
+	var horseAction = function(a, b){
+		var action = a + b;
+		console.log(" As I was riding this " + 
+					a + 
+					" I " + 
+					b + 
+					" to try to stop him."); 
+	};
+	
 
 //Main code
 var rideCall = riddenMiles("Pedro","riding this horse for ", 10);
 console.log(rideCall)
 var choiceCall = choose("Rafael", "saddle and harneess", " he can ride the horse. ")
 console.log(choiceCall)
-var collision = slowMotion(5)
-
+var collision = slowMotion(5);
+horseAction(a, b);
 
 

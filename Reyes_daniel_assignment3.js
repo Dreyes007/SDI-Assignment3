@@ -39,6 +39,24 @@ var choose = function (name, equipment, message) {
 		return choices;
 		
 };
+//Property Number
+var slowMotion = function(number){
+	
+	var seconds = number 
+		
+	while (seconds > 0){
+		console.log(seconds + " seconds till I hit the bush full of thorns ");		
+		seconds = seconds - 1;
+		
+		if(seconds > 0){
+			console.log(seconds + " seconds ");
+		} else {
+			console.log(" Jump!!! ");
+		};
+		console.log(" ");
+	};
+	return seconds;
+};
 
 
 //Main code
@@ -46,3 +64,7 @@ var rideCall = riddenMiles("Pedro","riding this horse for ", 10);
 console.log(rideCall)
 var choiceCall = choose("Rafael", "saddle and harneess", " he can ride the horse. ")
 console.log(choiceCall)
+var collision = slowMotion(5)
+
+
+

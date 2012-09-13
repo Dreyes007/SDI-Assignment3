@@ -9,6 +9,7 @@ speedOfHorse = [10, 15, 20],
 equipment = ["Saddle", "Spurs", "Harness"];
 var numberOfEquipment = 3;
 var nuts = true;
+var stuff = true;
 var miles = 10;
 
 //Method: Procedure
@@ -17,15 +18,31 @@ var riddenMiles = function(name, message, m) {
 	var howFar = m + m;
 	
 		if (nuts === true) {
-		rider = (name + " is crazy!, " + message + m + " miles ");
+		rider = (name + " is crazy!, " + message + m + " miles. ");
 	} else {
-		console.log(name + " is a great rider ");
+		rider = (name + " is a great rider. ");
 		
 	};
 		return rider;
 	
 };
 
+//Property Boolean
+var choose = function (name, equipment, message) {
+		
+	if (stuff === false) {
+		choices = ("If " + name + " brings the " + equipment + message);
+	} else {
+		choices = (" If " + name + " just brings the spurs, " + " he cannot ride the horse. ");
+		
+	};
+		return choices;
+		
+};
+
+
 //Main code
 var rideCall = riddenMiles("Pedro","riding this horse for ", 10);
 console.log(rideCall)
+var choiceCall = choose("Rafael", "saddle and harneess", " he can ride the horse. ")
+console.log(choiceCall)

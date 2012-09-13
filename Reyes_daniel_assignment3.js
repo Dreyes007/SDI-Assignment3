@@ -67,8 +67,29 @@ var a = "Crazy horse",
 					a + 
 					" I " + 
 					b + 
-					" to try to stop him."); 
-	};
+					" to try to stop him.");
+					 
+		return action;			 
+};
+//Array Property
+var attempts = function(friendNames, eyesShut){
+
+	var friendNames = ["Pedro,", "Julio,", "Rafael,"];
+	var eyesShut = ["5 seconds", "10 seconds", "20 seconds"];
+	
+	for(var i=0, f=friendNames.length; i < f; i++){
+		console.log(friendNames[i] + " covered the horse's eyes for " + eyesShut[i]);
+		
+		if(f < 4){
+			console.log("Try longer " + friendNames[i] + " the horse is not stoping.  ");
+		} else {
+			console.log(" Great job! " + friendNames[i] + " the horse finally stoped. ");
+		};
+		console.log(" ");
+	};	
+	return friendNames;
+};		
+	
 	
 
 //Main code
@@ -78,5 +99,5 @@ var choiceCall = choose("Rafael", "saddle and harneess", " he can ride the horse
 console.log(choiceCall)
 var collision = slowMotion(5);
 horseAction(a, b);
-
+attempts(); 
 

@@ -88,8 +88,22 @@ var attempts = function(friendNames, eyesShut){
 		console.log(" ");
 	};	
 	return friendNames;
-};		
+};
+//Json Data
+var rider = {
+	realName: "Enrique",
+	lastName: "Iglesias",
+	singer: true,
+	horses: ["On more shot", " got ya sucker"],
+	rideTo: function (){
+		console.log("San Juan")
+	}
 	
+};		
+rider.rideTo()
+for (var key in rider ){
+	console.log("key: " + key + ", value " + rider[key]);
+};
 	
 
 //Main code
